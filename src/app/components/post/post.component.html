@@ -1,0 +1,35 @@
+
+<div class="container" >
+
+  <div class="column" *ngIf="post">
+    <!-- Post-->
+    <div class="post-module hover">
+      <!-- Thumbnail-->
+      <div class="thumbnail">
+        <img [src]="photo"/>
+      </div>
+      <!-- Post Content-->
+      <div class="post-content">
+        <h1 class="title">{{post.title}}</h1>
+        <h2 class="sub_title">The city that never sleeps.</h2>
+        <p class="description">{{post.body}}</p>
+        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div class="control">
+  <a  class="btn back" [routerLink]="['/posts']"  >
+    back
+  </a>
+  <a  class="btn edit" [routerLink]="['/update/' + id]"  >
+    edit
+  </a>
+  <a  class="btn delete" (click)="delete()">
+    delete
+  </a>
+</div>

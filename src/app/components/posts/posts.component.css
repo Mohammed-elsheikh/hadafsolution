@@ -1,0 +1,12 @@
+.column{
+  position: relative;
+}
+.link-post{
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  right: 15px;
+  height: 100%;
+  z-index: 5;
+}

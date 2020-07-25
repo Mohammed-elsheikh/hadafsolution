@@ -1,0 +1,44 @@
+<div class="asidebar-admin">
+  <div class="inside-asidebar">
+    <ul class="nav-list">
+      <li class="list-asidebarnav-item">
+        <div class="logo-asidebar">
+          <img src="../../../assets/images/logo.png" alt="logo" />
+        </div>
+      </li>
+      <li class="list-asidebarnav-item" routerLinkActive="active">
+        <a [routerLink]="['/home']">
+          <div class="list-asidebar-inside">
+            <div class="icon-list-asidebar">
+              <i class="material-icons">home</i>
+            </div>
+            <span class="span-list-asidebar">home</span>
+          </div>
+        </a>
+      </li>
+      <li class="list-asidebarnav-item" routerLinkActive="active">
+        <a [routerLink]="['/users']">
+          <div class="list-asidebar-inside">
+            <div class="icon-list-asidebar">
+              <i class="material-icons">group</i>
+            </div>
+            <span class="span-list-asidebar">Users</span>
+          </div>
+        </a>
+      </li>
+      <li class="list-asidebarnav-item" routerLinkActive="active">
+        <a [routerLink]="['/app/customers']">
+          <div class="list-asidebar-inside">
+            <div class="icon-list-asidebar">
+              <i class="material-icons">group</i>
+            </div>
+            <span class="span-list-asidebar">Users</span>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- *ngIf="showMenuItem('Pages.Users')" -->

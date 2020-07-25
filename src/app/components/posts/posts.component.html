@@ -1,0 +1,25 @@
+
+<div class="container" >
+
+  <div class="column" *ngFor="let post of posts">
+    <!-- Post-->
+
+    <div class="post-module ">
+    <a class="link-post" [routerLink]="['/post/'+ post.id + '' ]"></a>
+
+      <!-- Thumbnail-->
+      <div class="thumbnail">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+      </div>
+      <!-- Post Content-->
+      <div class="post-content">
+        <div class="post-meta"><span class="timestamp">
+          <i class="fa fa-clock-o"></i>{{post.id}}</span>
+          <span class="comments"><i class="fa fa-comments"></i><a href="#">{{post.userId}}</a></span>
+        </div>
+        <h1 class="title">{{post.title}}</h1>
+      </div>
+    </div>
+  </div>
+
+</div>

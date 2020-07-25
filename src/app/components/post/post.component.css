@@ -1,0 +1,36 @@
+
+.container .column {
+    width: 100%;
+}
+
+.control{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.btn{
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.delete{
+  background-color: #e75448;
+}
+.edit{
+  background-color: #77e748;
+}
+.back{
+  color: #000;
+  background-color: #d1d1d1;
+}
+

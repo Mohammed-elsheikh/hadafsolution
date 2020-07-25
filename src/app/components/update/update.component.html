@@ -1,0 +1,10 @@
+<div class="login-page">
+  <div class="form" *ngIf="post">
+
+    <div class="login-form">
+      <input type="text" placeholder="post Title" [(ngModel)]="post.title"/>
+      <textarea rows="8" placeholder="Post Body" [(ngModel)]="post.body"></textarea>
+      <button (click)="update()">Update</button>
+    </div>
+  </div>
+</div>
